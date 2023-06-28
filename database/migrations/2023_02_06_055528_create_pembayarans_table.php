@@ -27,7 +27,7 @@ return new class extends Migration
             #$table->string('tahun_dibayar', 4);
 
             $table->integer('id_spp')->unsigned();
-            $table->foreign('id_spp')->references('id_spp')->on('siswa')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreign('id_spp')->references('id_spp')->on('spp')->cascadeOnDelete()->cascadeOnUpdate();
 
             $table->integer('jumlah_bayar');
             $table->timestamps();
